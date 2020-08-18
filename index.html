@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap"
       rel="stylesheet"
     />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Interior Design</title>
   </head>
@@ -25,9 +26,17 @@
             class="logo"
           />
           <ul class="main-nav">
-            <li><a href="">Gallery</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">Shop</a></li>
+            <li>
+              <a href="#">Gallery</a>
+            </li>
+            <li>
+              <a
+                href="#"
+                onclick="document.getElementById('id01').style.display='block'"
+                >Contact</a
+              >
+            </li>
+            <li><a href="http://zeteologos.com/">Shop</a></li>
           </ul>
         </div>
       </nav>
@@ -35,7 +44,12 @@
         <span id="name-text">Nilufar Tilla</span>
         <div><span id="center-text">Interior Design</span></div>
       </div>
-      <a href="" class="btn btn1">Contact</a>
+      <a
+        href="#"
+        onclick="document.getElementById('id01').style.display='block'"
+        class="btn btn1"
+        >Contact</a
+      >
     </header>
 
     <section class="services-section">
@@ -43,7 +57,7 @@
         <h2>Services Offered</h2>
         <p class="long-copy">
           At Lily of Gardens, we will produce custom made drapes, pillows,
-          beddings and men/women clothing with the highest quality fabrics!
+          beddings and women clothing with the highest quality fabrics!
         </p>
       </div>
 
@@ -75,25 +89,83 @@
       </div>
     </section>
 
+    <div class="kwes-form">
+      <div id="id01" class="modal">
+        <form
+          class="modal-content animate"
+          method="POST"
+          action="https://kwes.io/api/foreign/forms/Emk7Q3lBp7ueTQQnO7FH"
+        >
+          <div class="container">
+            <label for="firstName"><b>Full Name</b></label>
+            <input
+              type="text"
+              placeholder="Enter Full Name"
+              name="fullName"
+              required
+            />
+
+            <label for="email"><b>Email Address</b></label>
+            <input
+              type="text"
+              placeholder="Enter Email Address"
+              name="email"
+              required
+            />
+
+            <label for="textarea"><b>Brief Comments</b></label>
+            <br />
+            <textarea
+              id="textarea"
+              name="textarea"
+              rows="3"
+              cols="30"
+              required
+            ></textarea>
+
+            <button type="submit">Submit</button>
+          </div>
+
+          <div class="container" style="background-color: #f1f1f1;">
+            <button
+              type="button"
+              onclick="document.getElementById('id01').style.display='none'"
+              class="cancelbtn"
+            >
+              Cancel
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
     <footer>
       <div class="row">
         <div class="col span-1-of-2">
           <ul class="footer-nav">
             <li><a href="">Gallery</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">Shop</a></li>
+            <li>
+              <a
+                href="#"
+                onclick="document.getElementById('id01').style.display='block'"
+                >Contact</a
+              >
+            </li>
+            <li><a href="http://zeteologos.com/">Shop</a></li>
           </ul>
         </div>
         <div class="col span-1-of-2">
           <ul class="social-links">
             <li>
-              <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
             </li>
             <li>
-              <a href=""><ion-icon name="pricetags-outline"></ion-icon></a>
+              <a href="http://zeteologos.com/"
+                ><ion-icon name="pricetags-outline"></ion-icon
+              ></a>
             </li>
             <li>
-              <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
             </li>
           </ul>
         </div>
@@ -105,7 +177,8 @@
         </p>
       </div>
     </footer>
+    <script src="https://kwes.io/js/kwes.js" charset="utf-8"></script>
+    <script src="resources/js/main.js"></script>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
   </body>
-
-  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 </html>
